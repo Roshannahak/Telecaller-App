@@ -92,6 +92,102 @@ class _HomePageState extends State<HomePage> {
             Divider(
               height: 1,
               color: Color(0xFFB1C8E2),
+            ),
+            SizedBox(height: 20.h),
+            Container(
+              child: Column(
+                children: [
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: Text(
+                      "Today Stats",
+                      textAlign: TextAlign.start,
+                      style: TextStyle(
+                          fontSize: 14.sp, fontWeight: FontWeight.w400),
+                    ),
+                  ),
+                  SizedBox(height: 16.h),
+                  Row(
+                    children: [
+                      Expanded(
+                        flex: 5,
+                        child: Container(
+                          height: 120.h,
+                          padding: EdgeInsets.all(14),
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Row(
+                                children: [
+                                  Icon(Icons.call, size: 18.r, color: Colors.blue),
+                                  SizedBox(width: 5.w),
+                                  Text(
+                                    "Total calls",
+                                    textAlign: TextAlign.start,
+                                    style: TextStyle(
+                                        fontSize: 14.sp,
+                                        fontWeight: FontWeight.w400),
+                                  ),
+                                ],
+                              ),
+                              SizedBox(height: 10.h),
+                              Text(
+                                "105",
+                                textAlign: TextAlign.start,
+                                style: TextStyle(
+                                    fontSize: 24.sp,
+                                    fontWeight: FontWeight.w700),
+                              )
+                            ],
+                          ),
+                        ),
+                      ),
+                      SizedBox(width: 14.w),
+                      Expanded(
+                        flex: 5,
+                        child: Container(
+                          height: 120.h,
+                          padding: EdgeInsets.all(14),
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Row(
+                                children: [
+                                  Icon(Icons.call, size: 18.r, color: Colors.green),
+                                  SizedBox(width: 5.w),
+                                  Text(
+                                    "Done calls",
+                                    textAlign: TextAlign.start,
+                                    style: TextStyle(
+                                        fontSize: 14.sp,
+                                        fontWeight: FontWeight.w400),
+                                  ),
+                                ],
+                              ),
+                              SizedBox(height: 10.h),
+                              Text(
+                                "105",
+                                textAlign: TextAlign.start,
+                                style: TextStyle(
+                                    fontSize: 24.sp,
+                                    fontWeight: FontWeight.w700),
+                              )
+                            ],
+                          ),
+                        ),
+                      )
+                    ],
+                  )
+                ],
+              ),
             )
           ],
         ),
